@@ -1,4 +1,4 @@
-// Lucida Reader — service worker
+// Calm Reader — service worker
 // Toolbar click or Alt+R triggers content script injection on the active tab.
 
 const PROTECTED = /^(chrome|edge|about|chrome-extension|moz-extension|file|view-source):/i;
@@ -13,6 +13,6 @@ chrome.action.onClicked.addListener(async (tab) => {
       files: ["vendor/Readability.js", "src/content.js"],
     });
   } catch (err) {
-    console.error("Lucida Reader injection failed:", err);
+    console.error("Calm Reader injection failed:", err);
   }
 });

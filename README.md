@@ -1,4 +1,4 @@
-# Lucida Reader
+# Calm Reader
 
 A Mercury Reader successor — clean, distraction-free reading view for Chrome.
 Pure client-side, zero data collection, zero remote code.
@@ -8,14 +8,14 @@ Pure client-side, zero data collection, zero remote code.
 From your Mac:
 
 ```bash
-scp -r fos:~/workspace/projects/lucida-reader/extension ~/Desktop/lucida-reader
+scp -r fos:~/workspace/projects/calm-reader/extension ~/Desktop/calm-reader
 ```
 
 Then in Chrome:
 
 1. Open `chrome://extensions`.
 2. Toggle **Developer mode** (top right).
-3. Click **Load unpacked**, choose `~/Desktop/lucida-reader/`.
+3. Click **Load unpacked**, choose `~/Desktop/calm-reader/`.
 4. Pin the extension. Open any article. Click the icon or press **Alt+R**.
 
 ## What's inside
@@ -52,4 +52,4 @@ See `CLAUDE.md` → Publishing Checklist.
 
 ## License
 
-MIT for Lucida code. Readability.js is Apache-2.0 (Mozilla / Arc90).
+MIT for Calm code. Readability.js is Apache-2.0 (Mozilla / Arc90).

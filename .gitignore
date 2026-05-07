@@ -3,13 +3,17 @@
 dist/
 build/
 
+# node
+node_modules/
+package-lock.json
+
 # editor / OS
 .DS_Store
 .idea/
 .vscode/
 *.swp
 
-# secrets (none expected, but defensive)
+# secrets
 .env
 .env.*
 !.env.example

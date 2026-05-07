@@ -1,16 +1,16 @@
 ---
 type: project-brief
-project: lucida-reader
+project: calm-reader
 status: scaffolded
 owner: Fred Gaiotti
-project-path: ~/workspace/projects/lucida-reader/
-extension-path: ~/workspace/projects/lucida-reader/extension/
+project-path: ~/workspace/projects/calm-reader/
+extension-path: ~/workspace/projects/calm-reader/extension/
 target: Chrome Web Store (Manifest V3)
 created: 2026-05-08
 last-updated: 2026-05-08
 ---
 
-# Lucida Reader — Project Brief
+# Calm Reader — Project Brief
 
 Mercury Reader successor. Pure client-side Chrome extension that strips
 articles down to clean, readable text. Powered by Mozilla's Readability.js.
@@ -19,15 +19,15 @@ articles down to clean, readable text. Powered by Mozilla's Readability.js.
 
 ## LOCAL CLAUDE HANDOFF
 
-You are running in `~/workspace/projects/lucida-reader/` on FOS.
+You are running in `~/workspace/projects/calm-reader/` on FOS.
 The shippable Chrome extension lives in `extension/`.
 
 ### Current phase: Phase 1 — Scaffold complete, ready to load and test
 
 ### First task
-1. Pull the extension folder to a local Mac via `scp -r fos:~/workspace/projects/lucida-reader/extension ~/Desktop/`
+1. Pull the extension folder to a local Mac via `scp -r fos:~/workspace/projects/calm-reader/extension ~/Desktop/`
 2. Open `chrome://extensions`, enable Developer mode, click Load unpacked, select the `extension/` folder.
-3. Visit any article page, click the Lucida Reader toolbar icon (or press Alt+R), confirm reader view renders.
+3. Visit any article page, click the Calm Reader toolbar icon (or press Alt+R), confirm reader view renders.
 
 ### Architecture
 - `extension/manifest.json` — MV3 manifest, minimal permissions (`activeTab`, `storage`, `scripting`)
@@ -37,7 +37,7 @@ The shippable Chrome extension lives in `extension/`.
 - `extension/vendor/Readability.js` — Mozilla's parser, vendored (NOT loaded remotely — MV3 forbids that)
 - `extension/styles/reader.css` — Mercury-style typography
 
-### Why Lucida (working name)
+### Why Calm (working name)
 Latin for "clear, bright." Avoids Mercury/Postlight trademark issues.
 Rename freely — only one place to change: `manifest.json` `name` field.
 
@@ -60,7 +60,7 @@ Mercury Reader was discontinued after Postlight was acquired by NTT DATA (2022).
 Postlight Reader was removed from the Chrome Web Store on 2025-02-06, leaving
 ~1M users without a maintained replacement. Existing alternatives are either
 broader (Helperbird), AI-bloated (Clearly Reader), or compromised (Readermode.io).
-Lucida fills the simple-Mercury-replacement gap.
+Calm fills the simple-Mercury-replacement gap.
 
 ---
 

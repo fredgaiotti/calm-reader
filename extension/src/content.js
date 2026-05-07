@@ -1,9 +1,9 @@
-// Lucida Reader — content script
+// Calm Reader — content script
 // Runs in the page context. Readability.js is injected just before this file.
 // Toggles between original page and reader view.
 
 (function () {
-  const FLAG = "__lucidaReaderActive";
+  const FLAG = "__calmReaderActive";
 
   if (window[FLAG]) {
     // Already active — restore original by reloading.
@@ -17,12 +17,12 @@
     // eslint-disable-next-line no-undef
     article = new Readability(docClone).parse();
   } catch (e) {
-    console.error("Lucida Reader: Readability failed", e);
+    console.error("Calm Reader: Readability failed", e);
     return;
   }
 
   if (!article || !article.content) {
-    alert("Lucida Reader couldn't extract an article from this page.");
+    alert("Calm Reader couldn't extract an article from this page.");
     return;
   }
 
@@ -40,10 +40,10 @@
   <title>${escapeHTML(article.title || document.title)}</title>
   <link rel="stylesheet" href="${cssURL}">
 </head>
-<body data-theme="${prefs.theme}" data-font="${prefs.fontFamily}" style="--lucida-font-size:${prefs.fontSize}px">
-  <header class="lucida-toolbar">
-    <button id="lucida-close" aria-label="Close reader">×</button>
-    <div class="lucida-controls">
+<body data-theme="${prefs.theme}" data-font="${prefs.fontFamily}" style="--calm-font-size:${prefs.fontSize}px">
+  <header class="calm-toolbar">
+    <button id="calm-close" aria-label="Close reader">×</button>
+    <div class="calm-controls">
       <button data-theme-set="light">Light</button>
       <button data-theme-set="sepia">Sepia</button>
       <button data-theme-set="dark">Dark</button>
@@ -51,11 +51,11 @@
       <button data-font-step="1" aria-label="Larger">A+</button>
     </div>
   </header>
-  <article class="lucida-article">
-    <h1 class="lucida-title">${escapeHTML(article.title || "")}</h1>
-    ${article.byline ? `<p class="lucida-byline">${escapeHTML(article.byline)}</p>` : ""}
-    ${article.siteName ? `<p class="lucida-site">${escapeHTML(article.siteName)}</p>` : ""}
-    <div class="lucida-content">${article.content}</div>
+  <article class="calm-article">
+    <h1 class="calm-title">${escapeHTML(article.title || "")}</h1>
+    ${article.byline ? `<p class="calm-byline">${escapeHTML(article.byline)}</p>` : ""}
+    ${article.siteName ? `<p class="calm-site">${escapeHTML(article.siteName)}</p>` : ""}
+    <div class="calm-content">${article.content}</div>
   </article>
 </body>
 </html>`;
@@ -68,7 +68,7 @@
   }
 
   function wireControls() {
-    document.getElementById("lucida-close")?.addEventListener("click", () => {
+    document.getElementById("calm-close")?.addEventListener("click", () => {
       window.location.reload();
     });
     document.querySelectorAll("[data-theme-set]").forEach((btn) => {
@@ -83,7 +83,7 @@
         const step = parseInt(btn.getAttribute("data-font-step"), 10);
         chrome.storage.sync.get({ fontSize: 18 }, ({ fontSize }) => {
           const next = Math.max(12, Math.min(28, fontSize + step));
-          document.body.style.setProperty("--lucida-font-size", `${next}px`);
+          document.body.style.setProperty("--calm-font-size", `${next}px`);
           chrome.storage.sync.set({ fontSize: next });
         });
       });

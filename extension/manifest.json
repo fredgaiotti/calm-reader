@@ -1,11 +1,11 @@
 {
   "manifest_version": 3,
-  "name": "Lucida Reader",
+  "name": "Calm Reader",
   "version": "0.1.0",
   "description": "Strip articles to a clean, distraction-free reading view. Mercury Reader successor.",
   "minimum_chrome_version": "116",
   "action": {
-    "default_title": "Lucida Reader (Alt+R)",
+    "default_title": "Calm Reader (Alt+R)",
     "default_icon": {
       "16": "icons/icon-16.png",
       "48": "icons/icon-48.png",
@@ -32,7 +32,7 @@
         "default": "Alt+R",
         "mac": "Alt+R"
       },
-      "description": "Toggle Lucida Reader on the current tab"
+      "description": "Toggle Calm Reader on the current tab"
     }
   },
   "web_accessible_resources": [
