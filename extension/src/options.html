@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Lucida Reader — Options</title>
+  <style>
+    body { font: 14px system-ui, sans-serif; padding: 20px; min-width: 320px; color: #222; }
+    h1 { font-size: 16px; margin: 0 0 16px; }
+    label { display: block; margin: 12px 0 4px; font-weight: 500; }
+    select, input[type="number"] { width: 100%; padding: 6px; }
+    .row { display: flex; gap: 8px; align-items: center; }
+    .saved { color: #2a7a2a; font-size: 12px; height: 14px; margin-top: 8px; }
+    footer { margin-top: 20px; font-size: 12px; color: #888; }
+  </style>
+</head>
+<body>
+  <h1>Lucida Reader</h1>
+  <label for="theme">Theme</label>
+  <select id="theme">
+    <option value="light">Light</option>
+    <option value="sepia">Sepia</option>
+    <option value="dark">Dark</option>
+  </select>
+
+  <label for="fontFamily">Font family</label>
+  <select id="fontFamily">
+    <option value="serif">Serif (Mercury default)</option>
+    <option value="sans">Sans-serif</option>
+    <option value="mono">Monospace</option>
+  </select>
+
+  <label for="fontSize">Font size (px)</label>
+  <input type="number" id="fontSize" min="12" max="28" step="1">
+
+  <div class="saved" id="saved"></div>
+
+  <footer>
+    Lucida Reader collects no data. Activate with the toolbar icon or <kbd>Alt+R</kbd>.
+  </footer>
+  <script src="options.js"></script>
+</body>
+</html>
