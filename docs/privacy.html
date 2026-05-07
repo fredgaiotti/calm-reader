@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Calm Reader — Privacy Policy</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    body {
+      font: 17px/1.65 Charter, "Iowan Old Style", Georgia, serif;
+      color: #1a1a1a;
+      background: #fff;
+      max-width: 40rem;
+      margin: 4rem auto;
+      padding: 0 1.5rem 4rem;
+    }
+    h1 { font-size: 1.7rem; margin: 0 0 0.25em; letter-spacing: -0.01em; }
+    h2 { font-size: 1.1rem; margin: 2em 0 0.4em; }
+    p, ul { margin: 0 0 1em; }
+    ul { padding-left: 1.4em; }
+    li { margin-bottom: 0.3em; }
+    time { font-size: 0.9rem; color: #666; display: block; margin-bottom: 2em; }
+    a { color: #0b62d6; }
+    footer { margin-top: 3em; font-size: 0.85rem; color: #888; border-top: 1px solid #eee; padding-top: 1em; }
+  </style>
+</head>
+<body>
+  <h1>Calm Reader — Privacy Policy</h1>
+  <time datetime="2026-05-08">Effective: May 8, 2026</time>
+
+  <h2>Summary</h2>
+  <p>Calm Reader collects <strong>no data</strong>. It reads nothing from you, stores nothing remotely, and contacts no servers. Your reading is entirely private.</p>
+
+  <h2>What Calm Reader does</h2>
+  <ul>
+    <li>Reads the page you are currently viewing to extract article content using <a href="https://github.com/mozilla/readability" rel="noopener">Mozilla Readability</a>.</li>
+    <li>Stores your display preferences (theme, font, font size) locally in Chrome's <code>storage.sync</code> — synced to your own Google account, never accessible to us.</li>
+  </ul>
+
+  <h2>What Calm Reader does NOT do</h2>
+  <ul>
+    <li>Does not collect, transmit, or sell any personal data.</li>
+    <li>Does not track which URLs or articles you read.</li>
+    <li>Does not communicate with any remote server — there is no backend.</li>
+    <li>Does not include any analytics, telemetry, or crash reporting.</li>
+    <li>Does not request access to your browsing history.</li>
+    <li>Does not inject ads or affiliate links.</li>
+    <li>Does not modify any page you do not explicitly activate it on.</li>
+  </ul>
+
+  <h2>Permissions used</h2>
+  <ul>
+    <li><strong>activeTab</strong> — to read and reformat the article on the tab you activate the extension on. Only applies to the current, active tab at the moment you click the icon or press Alt+R.</li>
+    <li><strong>scripting</strong> — to inject the Readability parser and reader stylesheet into the active tab. All injected code is bundled locally; nothing is loaded from the internet.</li>
+    <li><strong>storage</strong> — to save your display preferences (theme, font, font size) across sessions using Chrome's built-in sync storage.</li>
+  </ul>
+
+  <h2>Third-party code</h2>
+  <p>Calm Reader bundles <a href="https://github.com/mozilla/readability" rel="noopener">Mozilla Readability.js</a> (Apache 2.0 license) as a local vendor file. This library runs entirely in your browser and does not phone home.</p>
+
+  <h2>Children</h2>
+  <p>Calm Reader does not collect any information from anyone, including children under 13.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>If this policy ever changes, the updated version will be posted at this URL with a new effective date. Given that Calm Reader collects no data, substantive changes are unlikely.</p>
+
+  <h2>Contact</h2>
+  <p>Questions? Open an issue at <a href="https://github.com/fredgaiotti/calm-reader/issues" rel="noopener">github.com/fredgaiotti/calm-reader/issues</a>.</p>
+
+  <footer>
+    Calm Reader is an open-source Chrome extension. MIT licensed. No data. No ads. Just reading.
+  </footer>
+</body>
+</html>

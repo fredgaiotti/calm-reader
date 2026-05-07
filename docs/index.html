@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Calm Reader — Clean reading view for Chrome</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    body {
+      font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: #1a1a1a;
+      background: #faf9f6;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #fff;
+      border-bottom: 1px solid rgba(0,0,0,0.08);
+      padding: 1.25rem 2rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+    header img { width: 48px; height: 48px; border-radius: 10px; }
+    header h1 { font-size: 1.25rem; margin: 0; font-weight: 600; }
+    header p { margin: 0; font-size: 0.9rem; color: #666; }
+    main { max-width: 44rem; margin: 4rem auto; padding: 0 1.5rem; }
+    h2 { font-size: 2rem; margin: 0 0 0.5em; letter-spacing: -0.02em; }
+    .lead { font-size: 1.15rem; color: #444; margin-bottom: 2rem; }
+    .features { list-style: none; padding: 0; margin: 0 0 2.5rem; display: grid; gap: 1rem; }
+    .features li { display: flex; gap: 0.75rem; align-items: flex-start; }
+    .features li::before { content: "✓"; color: #2a7a2a; font-weight: 700; margin-top: 0.05em; flex-shrink: 0; }
+    .cta {
+      display: inline-block;
+      background: #1a1a1a;
+      color: #fff;
+      text-decoration: none;
+      padding: 0.75rem 1.75rem;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 1rem;
+      margin-bottom: 0.75rem;
+    }
+    .cta:hover { background: #333; }
+    .secondary { font-size: 0.9rem; color: #888; display: block; margin-bottom: 3rem; }
+    footer { text-align: center; font-size: 0.85rem; color: #aaa; padding: 2rem; border-top: 1px solid #eee; }
+    footer a { color: #888; }
+  </style>
+</head>
+<body>
+  <header>
+    <div>
+      <h1>Calm Reader</h1>
+      <p>Clean reading view for Chrome</p>
+    </div>
+  </header>
+  <main>
+    <h2>Read anything, distraction-free.</h2>
+    <p class="lead">Mercury Reader is gone. Calm fills the gap — the same clean reading experience, open-source, zero data collection.</p>
+
+    <ul class="features">
+      <li>Strips ads, navigation, sidebars, and popups from any article</li>
+      <li>Light, Sepia, and Dark themes with one click</li>
+      <li>Adjustable font size and family (Serif, Sans, Mono)</li>
+      <li>Powered by Mozilla Readability — the same parser Firefox uses</li>
+      <li>Zero data collection, zero remote code, zero backend</li>
+      <li>Works with keyboard shortcut <kbd>Alt+R</kbd></li>
+    </ul>
+
+    <a class="cta" href="https://chromewebstore.google.com/detail/calm-reader" rel="noopener">Add to Chrome — it's free</a>
+    <span class="secondary">Or <a href="https://github.com/fredgaiotti/calm-reader">view source on GitHub</a> &middot; <a href="privacy.html">Privacy policy</a></span>
+  </main>
+  <footer>
+    Calm Reader is open-source (MIT). No ads. No tracking. <a href="https://github.com/fredgaiotti/calm-reader">GitHub</a> &middot; <a href="privacy.html">Privacy</a>
+  </footer>
+</body>
+</html>

@@ -22,7 +22,7 @@
   }
 
   if (!article || !article.content) {
-    alert("Calm Reader couldn't extract an article from this page.");
+    showToast("Calm Reader: no article found on this page.");
     return;
   }
 
@@ -88,6 +88,21 @@
         });
       });
     });
+  }
+
+  function showToast(msg) {
+    const el = document.createElement("div");
+    el.textContent = msg;
+    Object.assign(el.style, {
+      position: "fixed", bottom: "24px", left: "50%",
+      transform: "translateX(-50%)", zIndex: "2147483647",
+      background: "rgba(30,30,30,0.92)", color: "#fff",
+      font: "14px/1.4 -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif",
+      padding: "10px 18px", borderRadius: "8px",
+      pointerEvents: "none", transition: "opacity 0.4s",
+    });
+    document.body.appendChild(el);
+    setTimeout(() => { el.style.opacity = "0"; setTimeout(() => el.remove(), 400); }, 3000);
   }
 
   function escapeHTML(s) {

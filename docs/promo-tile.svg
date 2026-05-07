@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 280" width="440" height="280">
+  <!-- Background -->
+  <rect width="440" height="280" fill="#faf9f6"/>
+
+  <!-- Decorative article lines (simulated text) — right side -->
+  <g opacity="0.12" fill="#8a7a6a">
+    <rect x="248" y="56" width="148" height="8" rx="4"/>
+    <rect x="248" y="74" width="160" height="8" rx="4"/>
+    <rect x="248" y="92" width="132" height="8" rx="4"/>
+    <rect x="248" y="118" width="152" height="7" rx="3.5"/>
+    <rect x="248" y="133" width="145" height="7" rx="3.5"/>
+    <rect x="248" y="148" width="158" height="7" rx="3.5"/>
+    <rect x="248" y="163" width="140" height="7" rx="3.5"/>
+    <rect x="248" y="178" width="153" height="7" rx="3.5"/>
+    <rect x="248" y="200" width="148" height="6" rx="3"/>
+    <rect x="248" y="213" width="136" height="6" rx="3"/>
+    <rect x="248" y="226" width="155" height="6" rx="3"/>
+  </g>
+
+  <!-- Icon background circle -->
+  <rect x="44" y="88" width="80" height="80" rx="18" fill="#f0e8d8"/>
+
+  <!-- Icon lines (same style as extension icon) -->
+  <rect x="60" y="114" width="48" height="8" rx="4" fill="#4a3d2d"/>
+  <rect x="60" y="130" width="48" height="8" rx="4" fill="#4a3d2d"/>
+  <rect x="60" y="146" width="30" height="8" rx="4" fill="#a0784a"/>
+
+  <!-- Product name -->
+  <text x="44" y="205" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="28" font-weight="700" fill="#1a1a1a" letter-spacing="-0.5">Calm Reader</text>
+
+  <!-- Tagline -->
+  <text x="44" y="230" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" fill="#888" letter-spacing="0.2">Clean reading view for Chrome</text>
+
+  <!-- Divider -->
+  <line x1="220" y1="40" x2="220" y2="240" stroke="#e8e0d4" stroke-width="1"/>
+
+  <!-- Subtle bottom border -->
+  <rect x="0" y="270" width="440" height="10" fill="#f0e8d8" opacity="0.5"/>
+</svg>
