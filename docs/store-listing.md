@@ -1,11 +1,3 @@
----
-type: store-listing
-project: calm-reader
-version: "1.0.0"
-created: 2026-05-08
-status: ready-to-submit
----
-
 # Calm Reader — Chrome Web Store Listing
 
 ---

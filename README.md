@@ -5,17 +5,17 @@ Pure client-side, zero data collection, zero remote code.
 
 ## Try it locally (5 min)
 
-From your Mac:
+Clone the repo:
 
 ```bash
-scp -r fos:~/workspace/projects/calm-reader/extension ~/Desktop/calm-reader
+git clone https://github.com/fredgaiotti/calm-reader.git
 ```
 
 Then in Chrome:
 
 1. Open `chrome://extensions`.
 2. Toggle **Developer mode** (top right).
-3. Click **Load unpacked**, choose `~/Desktop/calm-reader/`.
+3. Click **Load unpacked**, choose the `extension/` folder inside the cloned repo.
 4. Pin the extension. Open any article. Click the icon or press **Alt+R**.
 
 ## What's inside
