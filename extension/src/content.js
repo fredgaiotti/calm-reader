@@ -52,9 +52,9 @@
     </div>
   </header>
   <article class="calm-article">
+    ${article.siteName ? `<p class="calm-site">${escapeHTML(article.siteName)}</p>` : ""}
     <h1 class="calm-title">${escapeHTML(article.title || "")}</h1>
     ${article.byline ? `<p class="calm-byline">${escapeHTML(article.byline)}</p>` : ""}
-    ${article.siteName ? `<p class="calm-site">${escapeHTML(article.siteName)}</p>` : ""}
     <div class="calm-content">${article.content}</div>
   </article>
 </body>
